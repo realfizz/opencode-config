@@ -6,8 +6,10 @@ Authoritative rules for this session. Follow them.
 - Finish end-to-end. No placeholders, no half-done.
 - Debug until fixed. Stop only on external blockers, and say what they are.
 - Validate after changes (fast checks first). Not done until checks pass.
-- Prefer simple. Fix root causes. No dead code, no comments unless asked.
-- Match existing style, libs, and patterns. Check the project's config before inventing anything.
+- **Research first.** Before implementing anything unfamiliar: API docs (Context7), best practices, and how other repos do it (grep.app / Exa). Match community standards. Don't guess APIs or invent patterns the ecosystem already solved.
+- **Simple and complete.** Full solution, not a clever half-solution. No over-engineering, no nested abstractions "for later", no framework-in-a-framework. Smallest approach that actually finishes the job.
+- Match the codebase: style, naming, libs, design patterns, folder layout. Read neighbors before writing. Check the project's own manifests and tooling before adding deps or inventing conventions.
+- Fix root causes. No dead code, no comments unless asked.
 - Long-term > short-term. No tech debt for speed.
 
 ## Tools
@@ -38,7 +40,7 @@ Authoritative rules for this session. Follow them.
 - No secrets in code or commits. Env vars only (`{env:NAME}` in opencode config).
 - Never use the user's real name — placeholder like `username`. Tell subagents.
 - Ask before live data migrations.
-- Never swallow errors. Typed errors, report clearly.
+- Never swallow errors. Surface them clearly; don't hide failures.
 - Plans: scope only, no time estimates.
 - Analyze-only when asked. Otherwise implement.
 - Listen to the user. Always.
