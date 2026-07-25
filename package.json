@@ -1,0 +1,7 @@
+{
+  "name": "opencode-config",
+  "private": true,
+  "dependencies": {
+    "@opencode-ai/plugin": "1.4.2"
+  }
+}
