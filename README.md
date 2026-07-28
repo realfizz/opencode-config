@@ -31,7 +31,7 @@ export CONTEXT7_API_KEY=...
 - `AGENTS.md` — global rules
 - `opencode.jsonc` — mcp, providers (no secrets)
 - `tui.json` — theme + tps counter
-- `commands/` — `/commit`, `/pr`, `/deslop`
+- `commands/` — `/commit`, `/pr`, `/issue`, `/deslop`
 - `skills/` — the ones I actually use
 - `themes/`
 
@@ -40,5 +40,7 @@ export CONTEXT7_API_KEY=...
 **`/commit`** — split the diff into conventional commits and land them
 
 **`/pr`** — branch if needed, push, open a GitHub PR (does not merge)
+
+**`/issue`** — file one GitHub issue from chat (bug/idea parking lot)
 
 **`/deslop`** — rip AI slop out of the branch
