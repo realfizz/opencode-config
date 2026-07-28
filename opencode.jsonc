@@ -94,6 +94,16 @@
       "repository": "resend/react-email",
       "branch": "canary",
       "description": "React Email source. Use for components, rendering, and packaging emails."
+    },
+    "paykit": {
+      "repository": "getpaykit/paykit",
+      "branch": "main",
+      "description": "PayKit (paykit.sh) source. Use for billing, plans, usage, Stripe webhooks — do not invent APIs."
+    },
+    "hono": {
+      "repository": "honojs/hono",
+      "branch": "main",
+      "description": "Hono source. Use when you need exact middleware, context, or adapter behavior from source."
     }
   }
 }
