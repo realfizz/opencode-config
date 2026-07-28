@@ -63,5 +63,37 @@
         }
       }
     }
+  },
+  "references": {
+    "opencode": {
+      "repository": "anomalyco/opencode",
+      "branch": "dev",
+      "description": "OpenCode source. Use when debugging opencode itself, config, tools, TUI, agents, or runtime — not for normal app work."
+    },
+    "opentui": {
+      "repository": "anomalyco/opentui",
+      "branch": "main",
+      "description": "OpenTUI source. Use for TUI primitives, rendering, and opencode UI layer details."
+    },
+    "bun": {
+      "repository": "oven-sh/bun",
+      "branch": "main",
+      "description": "Bun runtime/source. Prefer this over Node-shaped guesses for Bun APIs, bundler, and test runner."
+    },
+    "better-auth": {
+      "repository": "better-auth/better-auth",
+      "branch": "main",
+      "description": "Better Auth source of truth. Use for auth APIs, plugins, sessions — do not invent APIs."
+    },
+    "drizzle": {
+      "repository": "drizzle-team/drizzle-orm",
+      "branch": "main",
+      "description": "Drizzle ORM source. Use for schema, query builder, and driver APIs — do not invent."
+    },
+    "react-email": {
+      "repository": "resend/react-email",
+      "branch": "canary",
+      "description": "React Email source. Use for components, rendering, and packaging emails."
+    }
   }
 }
