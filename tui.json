@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/tui.json",
-  "theme": "flexoki",
+  "theme": "ember",
   "plugin": [
     "oc-tps@latest"
   ]

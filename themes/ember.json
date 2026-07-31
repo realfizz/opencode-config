@@ -1,0 +1,230 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "base00": "#101010",
+    "base01": "#171717",
+    "base02": "#222222",
+    "base03": "#404040",
+    "base04": "#737373",
+    "base05": "#e5e5e5",
+    "base06": "#f5f5f5",
+    "base07": "#fafafa",
+    "base08": "#fc0036",
+    "base09": "#ff6b1a",
+    "base0A": "#ffae00",
+    "base0B": "#29a948",
+    "base0C": "#00ac96",
+    "base0D": "#ff6b1a",
+    "base0E": "#f32882",
+    "base0F": "#ff8080",
+    "orange": "#ff6b1a",
+    "orangeHot": "#ff8c42",
+    "orangeDim": "#c24e0e",
+    "black": "#101010",
+    "white": "#fafafa",
+    "panel": "#171717",
+    "elevated": "#222222"
+  },
+  "theme": {
+    "primary": {
+      "dark": "orange",
+      "light": "orangeDim"
+    },
+    "secondary": {
+      "dark": "base04",
+      "light": "base04"
+    },
+    "accent": {
+      "dark": "orange",
+      "light": "orange"
+    },
+    "error": {
+      "dark": "base08",
+      "light": "base08"
+    },
+    "warning": {
+      "dark": "base0A",
+      "light": "orangeDim"
+    },
+    "success": {
+      "dark": "base0B",
+      "light": "base0B"
+    },
+    "info": {
+      "dark": "orangeHot",
+      "light": "orange"
+    },
+    "text": {
+      "dark": "base07",
+      "light": "base00"
+    },
+    "textMuted": {
+      "dark": "base04",
+      "light": "#666666"
+    },
+    "background": {
+      "dark": "black",
+      "light": "white"
+    },
+    "backgroundPanel": {
+      "dark": "panel",
+      "light": "#f5f5f5"
+    },
+    "backgroundElement": {
+      "dark": "elevated",
+      "light": "#eeeeee"
+    },
+    "border": {
+      "dark": "elevated",
+      "light": "#e5e5e5"
+    },
+    "borderActive": {
+      "dark": "orange",
+      "light": "orange"
+    },
+    "borderSubtle": {
+      "dark": "panel",
+      "light": "#f0f0f0"
+    },
+    "diffAdded": {
+      "dark": "base0B",
+      "light": "base0B"
+    },
+    "diffRemoved": {
+      "dark": "base08",
+      "light": "base08"
+    },
+    "diffContext": {
+      "dark": "base04",
+      "light": "base04"
+    },
+    "diffHunkHeader": {
+      "dark": "base03",
+      "light": "base03"
+    },
+    "diffHighlightAdded": {
+      "dark": "base0B",
+      "light": "base0B"
+    },
+    "diffHighlightRemoved": {
+      "dark": "base08",
+      "light": "base08"
+    },
+    "diffAddedBg": {
+      "dark": "panel",
+      "light": "#f0fdf4"
+    },
+    "diffRemovedBg": {
+      "dark": "panel",
+      "light": "#fef2f2"
+    },
+    "diffContextBg": {
+      "dark": "black",
+      "light": "white"
+    },
+    "diffLineNumber": {
+      "dark": "base03",
+      "light": "base04"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "panel",
+      "light": "#f0fdf4"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "panel",
+      "light": "#fef2f2"
+    },
+    "markdownText": {
+      "dark": "base05",
+      "light": "base00"
+    },
+    "markdownHeading": {
+      "dark": "orangeHot",
+      "light": "orangeDim"
+    },
+    "markdownLink": {
+      "dark": "orange",
+      "light": "orange"
+    },
+    "markdownLinkText": {
+      "dark": "orangeHot",
+      "light": "orangeDim"
+    },
+    "markdownCode": {
+      "dark": "base0B",
+      "light": "base0B"
+    },
+    "markdownBlockQuote": {
+      "dark": "base03",
+      "light": "base04"
+    },
+    "markdownEmph": {
+      "dark": "base0E",
+      "light": "base0E"
+    },
+    "markdownStrong": {
+      "dark": "base07",
+      "light": "base00"
+    },
+    "markdownHorizontalRule": {
+      "dark": "base03",
+      "light": "base04"
+    },
+    "markdownListItem": {
+      "dark": "orange",
+      "light": "orange"
+    },
+    "markdownListEnumeration": {
+      "dark": "orangeHot",
+      "light": "orangeDim"
+    },
+    "markdownImage": {
+      "dark": "base0C",
+      "light": "base0C"
+    },
+    "markdownImageText": {
+      "dark": "orange",
+      "light": "orange"
+    },
+    "markdownCodeBlock": {
+      "dark": "base05",
+      "light": "base00"
+    },
+    "syntaxComment": {
+      "dark": "base03",
+      "light": "base04"
+    },
+    "syntaxKeyword": {
+      "dark": "orange",
+      "light": "orangeDim"
+    },
+    "syntaxFunction": {
+      "dark": "orangeHot",
+      "light": "orange"
+    },
+    "syntaxVariable": {
+      "dark": "base05",
+      "light": "base00"
+    },
+    "syntaxString": {
+      "dark": "base0B",
+      "light": "base0B"
+    },
+    "syntaxNumber": {
+      "dark": "base0A",
+      "light": "orangeDim"
+    },
+    "syntaxType": {
+      "dark": "base0A",
+      "light": "base0A"
+    },
+    "syntaxOperator": {
+      "dark": "base05",
+      "light": "base00"
+    },
+    "syntaxPunctuation": {
+      "dark": "base04",
+      "light": "base04"
+    }
+  }
+}
