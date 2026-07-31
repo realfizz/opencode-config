@@ -11,6 +11,16 @@
     "websearch": true
   },
   "lsp": false,
+  "permission": {
+    "bash": {
+      "*": "allow",
+      "*--no-verify*": "deny",
+      "git commit*--no-verify*": "deny",
+      "git push*--no-verify*": "deny",
+      "git merge*--no-verify*": "deny",
+      "git *core.hooksPath=/dev/null*": "deny"
+    }
+  },
   "instructions": [
     "AGENTS.md"
   ],
