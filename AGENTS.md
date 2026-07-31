@@ -27,6 +27,7 @@ Authoritative rules for this session. Follow them.
 
 ## Git
 - No commits unless asked (or `/commit`).
+- Never skip hooks (`--no-verify`, `commit -n`, hooksPath=/dev/null). Fix the failure instead.
 - Conventional commits, short, lowercase, no trailing period:
   - `feat(auth): add session refresh`
   - `fix(api): handle empty payload`

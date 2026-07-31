@@ -32,6 +32,7 @@ export CONTEXT7_API_KEY=...
 - `opencode.jsonc` — mcp, providers (no secrets)
 - `tui.json` — theme + tps counter
 - `commands/` — `/commit`, `/pr`, `/issue`, `/deslop`
+- `plugins/` — local only (e.g. block `git --no-verify`)
 - `skills/` — the ones I actually use
 - `themes/`
 
