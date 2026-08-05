@@ -60,6 +60,11 @@
       "url": "http://localhost:13337/mcp",
       "enabled": true,
       "oauth": false
+    },
+    "shoogle": {
+      "type": "remote",
+      "url": "https://mcp.shoogle.dev/mcp",
+      "enabled": true
     }
   },
   "provider": {
