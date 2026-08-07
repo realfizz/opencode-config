@@ -2,6 +2,8 @@
 
 My [OpenCode](https://opencode.ai) setup.
 
+![preview](preview.png)
+
 ## Install
 
 ```sh
