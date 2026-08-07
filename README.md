@@ -2,7 +2,7 @@
 
 My [OpenCode](https://opencode.ai) setup.
 
-![preview](preview.png)
+![preview](assets/preview.png)
 
 ## Install
 
