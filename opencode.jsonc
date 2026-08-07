@@ -61,11 +61,6 @@
       "enabled": true,
       "oauth": false
     },
-    "shoogle": {
-      "type": "remote",
-      "url": "https://mcp.shoogle.dev/mcp",
-      "enabled": true
-    },
     "linear": {
       "type": "remote",
       "url": "https://mcp.linear.app/mcp",
