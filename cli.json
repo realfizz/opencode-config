@@ -25,7 +25,8 @@
     "enabled": false
   },
   "attention": {
-    "enabled": true
+    "enabled": true,
+    "volume": 0.8999999999999999
   },
   "debug": {
     "turn_tokens": false,
