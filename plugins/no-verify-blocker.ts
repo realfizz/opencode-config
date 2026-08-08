@@ -1,5 +1,3 @@
-// Local plugin — no npm. Blocks agents bypassing git hooks.
-
 function tokens(command: string): string[] {
   return command.match(/\S+/g) ?? []
 }
@@ -18,7 +16,6 @@ function isHookSubcommand(command: string): boolean {
 }
 
 function isCommit(command: string): boolean {
-  // commit / commit-tree after git, not --grep=commit
   return /\bgit\b[^\n=]*\s+commit(?:-tree)?\b/.test(command)
 }
 
