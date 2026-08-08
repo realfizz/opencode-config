@@ -1,0 +1,34 @@
+{
+  "theme": {
+    "name": "ember"
+  },
+  "plugins": [
+    "oc-tps@latest"
+  ],
+  "diffs": {
+    "wrap": "none"
+  },
+  "terminal": {
+    "title": true
+  },
+  "session": {
+    "sidebar": "hide",
+    "scrollbar": true,
+    "thinking": "hide",
+    "markdown": "rendered",
+    "grouping": "auto"
+  },
+  "animations": true,
+  "tabs": {
+    "layout": "vertical",
+    "scope": "global",
+    "enabled": false
+  },
+  "attention": {
+    "enabled": true
+  },
+  "debug": {
+    "turn_tokens": false,
+    "devtools": false
+  }
+}
