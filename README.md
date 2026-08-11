@@ -26,6 +26,7 @@ Put these in your shell (`~/.zshrc` or whatever). OpenCode reads them via `{env:
 ```sh
 export EXA_API_KEY=...
 export CONTEXT7_API_KEY=...
+export BLOB_READ_WRITE_TOKEN=...
 ```
 
 ## What's in here
@@ -33,7 +34,7 @@ export CONTEXT7_API_KEY=...
 - `AGENTS.md` — global rules
 - `opencode.jsonc` — mcp, providers (no secrets)
 - `tui.json` — theme + tps counter
-- `commands/` — `/commit`, `/pr`, `/issue`, `/draft`, `/deslop`, `/linear`
+- `commands/` — `/commit`, `/pr`, `/pr-ui`, `/issue`, `/draft`, `/deslop`, `/linear`
 - `plugins/` — local only (e.g. block `git --no-verify`)
 - `skills/` — the ones I actually use
 - `themes/`
@@ -43,6 +44,8 @@ export CONTEXT7_API_KEY=...
 **`/commit`** — split the diff into conventional commits and land them
 
 **`/pr`** — branch if needed, push, open a GitHub PR (does not merge)
+
+**`/pr-ui`** — open a PR with before & after screenshots for UI work
 
 **`/issue`** — file one GitHub issue from chat (bug/idea parking lot)
 
