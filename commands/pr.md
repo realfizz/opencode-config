@@ -5,6 +5,8 @@ subtask: false
 
 Open a PR for the current work. Do not merge. Invoking this command IS confirmation — just do it.
 
+The body is for a human (and for git archaeology). Say what landed and why. Do not write a test plan, review map, risk list, or evidence dump.
+
 ## 1. Ground yourself
 
 ```bash
@@ -22,7 +24,7 @@ git diff --stat origin/$BASE...HEAD
 git diff origin/$BASE...HEAD
 ```
 
-Read enough of the diff to write an honest summary. If the diff is empty and the working tree is clean, stop and say so.
+Read the diff. If it is empty and the working tree is clean, stop and say so.
 
 ## 2. Branch + commits
 
@@ -45,34 +47,35 @@ feat(ui): add social links and clean up structure
 fix(api): handle empty payload
 ```
 
-Body — exactly this shape, nothing else. No "This PR…", no emdashes, no AI essay:
+Body — What + Why. Leftovers only if there are any. No "This PR…", no emdashes, no AI essay, no Test plan / Review / Risk / Evidence.
 
 ```markdown
-## Summary
-- concrete bullet of what changed
-- another bullet
-- keep it short; paths/symbols when useful
+## What
+- what actually landed, in product/behavior terms (paths/symbols when that is the change)
+- not a file list, not "updated X and cleaned up Y"
 
-## Test plan
-- [ ] thing a human should verify
-- [ ] another check
-- [ ] include real commands when relevant (`bun test`, `task build`, etc.)
+## Why
+- the problem or constraint this exists for
+- anything a reader cannot get from the code: rejected alternative, product rule, "we left X alone on purpose"
+
+## Leftovers
+- known holes, follow-ups, out of scope. omit when there are none
 ```
 
 Create with a heredoc (real newlines):
 
 ```bash
 gh pr create --title "..." --body "$(cat <<'EOF'
-## Summary
+## What
 - ...
 
-## Test plan
-- [ ] ...
+## Why
+- ...
 EOF
 )"
 ```
 
-If a PR for this branch already exists, update it (`gh pr edit`) instead of opening a second one.
+If a PR for this branch already exists, update it (`gh pr edit`) instead of opening a second one. Keep any sections a human already wrote (screenshots, discussion) unless they are now false.
 
 ## 5. Done
 

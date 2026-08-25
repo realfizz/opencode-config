@@ -1,7 +1,8 @@
 ---
-description: File a GitHub issue from chat context
-subtask: false
----
+
+## description: file github issue from chat ctx
+
+##  subtask: false
 
 Capture something from this session as a single GitHub issue on the current repo. Not a full breakdown (that's `to-issues`) — one bug, idea, or follow-up so you can keep working and fix it later.
 
@@ -67,6 +68,8 @@ gh issue create --title "..." --body "$(cat <<'EOF'
 EOF
 )"
 ```
+
+
 
 ## 5. Done
 

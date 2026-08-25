@@ -7,7 +7,7 @@ See git diff and git status. Gitignore junk first (node_modules, build output, s
 
 Understand the diff. Read files when the change isn't yours.
 
-Split into focused commits — one logical change each. Smaller is better. Hunks only if one file mixes unrelated work.
+Split into focused commits — one logical change each. Smaller is better. Hunks only if one file mixes unrelated work. 
 
 ## Messages
 

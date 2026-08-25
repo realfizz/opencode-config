@@ -1,7 +1,6 @@
 ---
-description: Draft commit messages without committing
-subtask: false
----
+
+## description: draft commit without actually commiting
 
 Same standards as `/commit`, but **don't commit**. Just output the message(s) in chat.
 
@@ -30,16 +29,14 @@ chore: ignore build output
 - lowercase, no trailing period, one line
 - no fluff, no "this commit"
 
+
+
 ## Output
 
 Show each draft as a fenced block the user can copy. One per logical commit. Example:
 
-\`\`\`
 feat(config): add shoogle mcp
-\`\`\`
 
-\`\`\`
 fix(plugins): modernize no-verify blocker
-\`\`\`
 
 Do not stage, do not commit, do not run any git command that mutates state. If the diff is empty, say so.
