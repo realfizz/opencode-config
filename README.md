@@ -11,46 +11,29 @@ git clone https://github.com/realfizz/opencode-config.git ~/.config/opencode
 cd ~/.config/opencode && bun install
 ```
 
-Or clone somewhere else and symlink it:
-
-```sh
-git clone https://github.com/realfizz/opencode-config.git ~/dev/opencode-config
-ln -sfn ~/dev/opencode-config ~/.config/opencode
-cd ~/dev/opencode-config && bun install
-```
-
 ## Keys
 
-Put these in your shell (`~/.zshrc` or whatever). OpenCode reads them via `{env:…}`.
+Put these in your shell (`~/.zshrc` or whatever. 
 
 ```sh
 export EXA_API_KEY=...
 export CONTEXT7_API_KEY=...
-export BLOB_READ_WRITE_TOKEN=...
 ```
 
 ## What's in here
 
-- `AGENTS.md` — global rules
-- `opencode.jsonc` — mcp, providers (no secrets)
-- `tui.json` — theme + tps counter
-- `commands/` — `/commit`, `/pr`, `/pr-ui`, `/issue`, `/draft`, `/deslop`, `/linear`
-- `plugins/` — local only (e.g. block `git --no-verify`)
-- `skills/` — the ones I actually use
-- `themes/`
+- `AGENTS.md`, global rules
+- `opencode.jsonc`, config
+- `tui.json`, theme, tps counter
+- `cli.json`, cli theme, session, debug
+- `commands/`, `/commit`, `/pr`, `/issue`, `/draft`
+- `plugins/`, local only (e.g. block `git --no-verify`)
+- `skills/`, the ones I actually use
+- `themes/`, uhh themes.
 
 ## Commands
 
-**`/commit`** — split the diff into conventional commits and land them
-
-**`/pr`** — branch if needed, push, open a GitHub PR (does not merge)
-
-**`/pr-ui`** — open a PR with before & after screenshots for UI work
-
-**`/issue`** — file one GitHub issue from chat (bug/idea parking lot)
-
-**`/draft`** — draft commit messages without committing
-
-**`/linear`** — create Linear issues from chat
-
-**`/deslop`** — rip AI slop out of the branch
+**`/commit`**, transforms diff into small commits
+**`/pr`**, creates a GitHub PR and branch
+**`/issue`**, file an issue from chat context (e.g. a bug)
+**`/draft`**, draft commit messages
