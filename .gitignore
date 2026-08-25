@@ -8,4 +8,7 @@ package-lock.json
 .DS_Store
 .ruff_cache/
 service.json
+service-*.json
 *.backup*
+old-skills/
+skills/setup-ts-guardrails/
