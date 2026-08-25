@@ -4,17 +4,12 @@
   "share": "disabled",
   "snapshots": true,
   "lsp": false,
+  // Ordered rules: LAST match wins. Broad allow first, bypass denies after.
   "permissions": [
     { "action": "shell", "resource": "*", "effect": "allow" },
     { "action": "shell", "resource": "*--no-verify*", "effect": "deny" },
-    { "action": "shell", "resource": "git commit*--no-verify*", "effect": "deny" },
-    { "action": "shell", "resource": "git push*--no-verify*", "effect": "deny" },
-    { "action": "shell", "resource": "git merge*--no-verify*", "effect": "deny" },
-    { "action": "shell", "resource": "git *core.hooksPath=/dev/null*", "effect": "deny" },
+    { "action": "shell", "resource": "*core.hooksPath=/dev/null*", "effect": "deny" },
     { "action": "websearch", "resource": "*", "effect": "allow" }
-  ],
-  "instructions": [
-    "AGENTS.md"
   ],
   "watcher": {
     "ignore": [
@@ -45,27 +40,21 @@
       },
       "ida_pro_mcp_gui": {
         "type": "remote",
-        "url": "http://localhost:13337/mcp"
+        "url": "http://localhost:13337/mcp",
+        "disabled": true,
+        // Code Mode can't discover these tools; expose them natively
+        "codemode": false
       },
-      "linear": {
+      "ida_pro_mcp": {
         "type": "remote",
-        "url": "https://mcp.linear.app/mcp",
-        "oauth": {}
+        "url": "http://127.0.0.1:8745/mcp",
+        "codemode": false
       }
     }
   },
-  "providers": {
-    "xai": {
-      "models": {
-        "grok-composer-2.5-fast": {
-          "name": "Composer 2.5 Fast"
-        },
-        "grok-build-0.1": {
-          "name": "Grok Build"
-        }
-      }
-    }
-  },
+  "plugins": [
+    "./plugins/no-verify-blocker.ts"
+  ],
   "references": {
     "opencode": {
       "repository": "anomalyco/opencode",

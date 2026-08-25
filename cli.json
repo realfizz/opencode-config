@@ -1,35 +1,22 @@
 {
   "theme": {
-    "name": "ember"
-  },
-  "plugins": [
-    "oc-tps@latest"
-  ],
-  "diffs": {
-    "wrap": "none"
-  },
-  "terminal": {
-    "title": true
-  },
-  "session": {
-    "sidebar": "hide",
-    "scrollbar": true,
-    "thinking": "hide",
-    "markdown": "rendered",
-    "grouping": "auto"
-  },
-  "animations": true,
-  "tabs": {
-    "layout": "vertical",
-    "scope": "global",
-    "enabled": false
+    "mode": "system",
+    "name": "system"
   },
   "attention": {
     "enabled": true,
-    "volume": 0.8999999999999999
+    "volume": 0.9
+  },
+  "diffs": {
+    "view": "auto"
+  },
+  "session": {
+    "sidebar": "hide",
+    "thinking": "hide"
   },
   "debug": {
-    "turn_tokens": false,
-    "devtools": false
+    "devtools": true,
+    "timing": false,
+    "turn_tokens": "verbose"
   }
 }
