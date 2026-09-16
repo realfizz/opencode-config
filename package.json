@@ -1,7 +1,15 @@
 {
   "name": "opencode-config",
   "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
-    "@opencode-ai/plugin": "0.0.0-beta-17793"
+    "@opencode/plugin": "2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.2",
+    "typescript": "5.8.2"
   }
 }

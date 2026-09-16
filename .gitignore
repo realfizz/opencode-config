@@ -1,14 +1,2 @@
-node_modules/
-bun.lock
-package-lock.json
-.env
-.env.*
-!.env.example
-*.log
-.DS_Store
-.ruff_cache/
 service.json
-service-*.json
-*.backup*
-old-skills/
-skills/setup-ts-guardrails/
+node_modules/
