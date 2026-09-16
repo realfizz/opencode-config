@@ -25,6 +25,8 @@ cd ~/.config/opencode && bun install
 
 **`/pr`**, same thing but it opens a GitHub PR.
 
+**`/issue`**, file a GitHub issue from this chat.
+
 ## Plugins
 
 **`git-guard`**, block agents from running `--no-verify`.
