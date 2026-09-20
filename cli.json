@@ -24,5 +24,8 @@
   },
   "terminal": {
     "title": true
+  },
+  "prompt": {
+    "paste": "full"
   }
 }
