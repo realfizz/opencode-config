@@ -23,7 +23,7 @@ Tests: "Is this data crossing a system seam right now?" If not, skip the guard. 
 - **Construct** the legal value: non-empty is `[T, ...T[]]`, a range is `start` + `duration`. Do not carve it out of a looser type with a runtime wish.
 - **Brand** primitives that mean different things (`UserId` vs `OrderId`). Validate once at the seam.
 - **Keep `T[]` total.** Strengthen (non-empty, etc.) only where the loose type forces `!`, a cast, or a "should never happen" throw.
-- External data is **`unknown`**. Parse with the repo's schema library (`z.infer` etc.) before hand-writing a type guard.
+- External data is **`unknown`**. Parse it with Zod. Look up current docs first and use a built-in (`z.httpUrl()`, `z.email()`, `z.creditCard()`, `z.iso.datetime()`, and the rest) before composing a schema. Do not hand-write the check.
 - No lying `as`. Cast only after a parse. Prefer `satisfies`. Narrowing order: discriminant switch > `in` > `typeof`/`instanceof` > honest `isX` guard > `as`.
 - Exhaust: `const _exhaustive: never = x` in the default arm.
 - Derive with `Pick` / `Omit` / `Parameters` / `ReturnType` / `Awaited` / `typeof` before a new interface.

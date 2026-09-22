@@ -4,6 +4,8 @@ Always follow these rules:
 
 - Technical research: use the GitHub CLI to search code and repos. To inspect a repo in depth, clone it under `tmp/` and explore locally.
 
+- Schemas: parse with Zod, not a hand-rolled check, regex, or type guard. Before writing a schema, look up the current Zod docs (Context7 or the web). Prefer a built-in (`z.httpUrl()`, `z.email()`, `z.creditCard()`, `z.iso.datetime()`, and the rest) over composing one. Zod 4 added many of these; do not assume the old surface.
+
 # Development
 
 Load these with the skill tool by exact ID. Do not skip them because the change "looks small."
